@@ -1,5 +1,4 @@
 import sys
-import os
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 from Interface.Interface import Ui_MainWindow
 from utils.Generate import Generate
