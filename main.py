@@ -4,6 +4,7 @@ from Interface.Interface import Ui_MainWindow
 from utils.Generate import Generate
 from utils.WriteFile import WriteFile
 
+version = "0.1.1"
 
 class MainWindow(QMainWindow):
     def GenerateButton(self,action:bool):
@@ -21,6 +22,7 @@ class MainWindow(QMainWindow):
         self.fileName:tuple[str,str]
         self.GenerateButton(False)
         self.output:list[str]
+        self.setWindowTitle(f"DictGenerator4OI {version}")
 
     def start(self):
         QMessageBox.information(self,"Generation has started","Please wait...")
