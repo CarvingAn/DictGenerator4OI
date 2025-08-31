@@ -1,4 +1,6 @@
 import sys
+
+from PySide6 import QtGui, QtCore
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
 from Interface.Interface import Ui_MainWindow
 from utils.Generate import Generate
@@ -23,6 +25,8 @@ class MainWindow(QMainWindow):
         self.GenerateButton(False)
         self.output:list[str]
         self.setWindowTitle(f"DictGenerator4OI {version}")
+        self.setWindowIcon(QtGui.QIcon("Interface/icon.ico"))
+        self.setIconSize(QtCore.QSize(100,100))
 
     def start(self):
         QMessageBox.information(self,"Generation has started","Please wait...")

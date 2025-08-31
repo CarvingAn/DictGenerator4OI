@@ -212,3 +212,6 @@ __marimo__/
 *.pkg
 *.app
 *.apk
+
+# Icon files (GIMP)
+*.xcf
