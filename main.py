@@ -6,7 +6,7 @@ from Interface.Interface import Ui_MainWindow
 from utils.Generate import Generate
 from utils.WriteFile import WriteFile
 
-version = "0.2.0"
+version = "1.0.0"
 
 class MainWindow(QMainWindow):
     def GenerateButton(self,action:bool):

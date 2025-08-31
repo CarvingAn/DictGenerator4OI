@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "DictGenerator4OI"
-#define MyAppVersion "0.2.0"
+#define MyAppVersion "1.0.0"
 #define MyAppPublisher "CarvingAn"
 #define MyAppExeName "main.exe"
 
