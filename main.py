@@ -1,4 +1,5 @@
 import sys
+from os import path
 
 from PySide6 import QtGui, QtCore
 from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog, QMessageBox
@@ -25,7 +26,12 @@ class MainWindow(QMainWindow):
         self.GenerateButton(False)
         self.output:list[str]
         self.setWindowTitle(f"DictGenerator4OI {version}")
-        self.setWindowIcon(QtGui.QIcon("Interface/icon.ico"))
+        if getattr(sys, 'frozen', False):
+            base_path = sys._MEIPASS
+            icon_path = path.join(base_path, 'Interface', 'icon.ico')
+        else:
+            icon_path = "Interface/icon.ico"
+        self.setWindowIcon(QtGui.QIcon(icon_path))
         self.setIconSize(QtCore.QSize(100,100))
 
     def start(self):
