@@ -2,8 +2,8 @@ name: Build Packages
 
 on:
   push:
-    branches:
-      - Automation-Test
+    tags:
+      - 'v*'
 
 jobs:
   build-windows:
